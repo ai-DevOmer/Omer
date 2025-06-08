@@ -95,4 +95,11 @@ class Sin:
                 <p id="result-text"></p>
             </div>
         </center>         
-        </body
+        </body>
+        </html>
+        """
+
+# ✅ هذا الجزء المطلوب إضافته لتعمل على Render:
+if __name__ == '__main__':
+    cherrypy.config.update({'server.socket_host': '0.0.0.0'})
+    cherrypy.quickstart(Sin())
