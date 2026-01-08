@@ -15,7 +15,7 @@ class Sin:
         <html lang="ar">
         <head>
             <meta charset="UTF-8">
-            <title>palestine robot</title>
+            <title>AlwaysGpt</title>
             <style>
                 body {
                     font-family: Arial, sans-serif;
@@ -84,22 +84,25 @@ class Sin:
         <body>
         <center>
         <hr>
-        <mark><a href="https://t.me/omegpt">ذكاء اصطناعي خاص بدولة فلسطين</a></mark>
+        <mark><a href="https://t.me/omegpt">AlwaysGpt - مشروع الذكاء الاصطناعي</a></mark>
         <hr>
-            <h1>اسأل اي سؤال في بالك عن فلسطين ؟</h1>
+            <h1>اسأل اي سؤال في بالك عن AlwaysGpt؟</h1>
             <form method="post" action="send">
                 <input type="text" name="email" placeholder="اكتب سؤالك هنا" required>
-                <input type="submit" value="ارسال إلى الروبوت">
+                <input type="submit" value="ارسال إلى AlwaysGpt">
             </form>
             <div id="result-container" class="result-container">
                 <p id="result-text"></p>
             </div>
         </center>         
+        <footer>
+        <p>&#169; Developed by ENG OMAR</p>
+        </footer>
         </body>
         </html>
         """
 
-# ✅ هذا الجزء المطلوب إضافته لتعمل على Render:
+# ☑️ هذا الجزء المطلوب إضافته لتعمل على Render:
 if __name__ == '__main__':
     cherrypy.config.update({'server.socket_host': '0.0.0.0'})
     cherrypy.quickstart(Sin())
